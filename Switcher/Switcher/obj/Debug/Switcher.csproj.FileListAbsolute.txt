@@ -12,3 +12,4 @@ C:\Users\Kotypey\Desktop\switcher\Switcher\Switcher\obj\Debug\Switcher.Propertie
 C:\Users\Kotypey\Desktop\switcher\Switcher\Switcher\obj\Debug\Switcher.csproj.GenerateResource.cache
 C:\Users\Kotypey\Desktop\switcher\Switcher\Switcher\obj\Debug\Switcher.exe
 C:\Users\Kotypey\Desktop\switcher\Switcher\Switcher\obj\Debug\Switcher.pdb
+C:\Users\Kotypey\Desktop\switcher\Switcher\Switcher\obj\Debug\Button.baml
