@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Switcher.utils;
 namespace Switcher
 {
-    class Switcher
+    class SSwitcher
     {
         private readonly string ip;
-        public Switcher(String address)
+        public SSwitcher(String address)
         {
             this.ip = address;
         }
@@ -19,18 +19,18 @@ namespace Switcher
             var lines = HostsFile.AllLines();
             var res = lines.Where(x => !x.Contains("osu.ppy.sh")).ToList();
             List<string> a = new List<string>();
-            a.Append(ip + "osu.ppy.sh");
-            a.Append(ip + "c.ppy.sh");
-            a.Append(ip + "c1.ppy.sh");
-            a.Append(ip + "c2.ppy.sh");
-            a.Append(ip + "c3.ppy.sh");
-            a.Append(ip + "c4.ppy.sh");
-            a.Append(ip + "c5.ppy.sh");
-            a.Append(ip + "c6.ppy.sh");
-            a.Append(ip + "ce.ppy.sh");
-            a.Append(ip + "a.ppy.sh");
-            a.Append(ip + "i.ppy.sh");
-            a.Append(ip + "s.ppy.sh");
+            a.Add(ip + " osu.ppy.sh");
+            a.Add(ip + " c.ppy.sh");
+            a.Add(ip + " c1.ppy.sh");
+            a.Add(ip + " c2.ppy.sh");
+            a.Add(ip + " c3.ppy.sh");
+            a.Add(ip + " c4.ppy.sh");
+            a.Add(ip + " c5.ppy.sh");
+            a.Add(ip + " c6.ppy.sh");
+            a.Add(ip + " ce.ppy.sh");
+            a.Add(ip + " a.ppy.sh");
+            a.Add(ip + " i.ppy.sh");
+            a.Add(ip + " s.ppy.sh");
             /*
              *  айпишники которые надо добавить A.K.A кастыль
                 ip + "c1.ppy.sh",
@@ -51,7 +51,7 @@ namespace Switcher
 
         public void SwitchToOff()
         {
-            HostsFile.WriteAllLines(HostsFile.AllLines().Where(x => !x.Contains("ppy.sh"));
+            HostsFile.WriteAllLines(HostsFile.AllLines().Where(x => !x.Contains("ppy.sh")));
         }
 
         public Task<Servers> getCurrsrvAsync()
