@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Switcher.utils;
+using $safeprojectname$.utils;
 namespace Switcher
 {
     /// <summary>
@@ -27,9 +27,9 @@ namespace Switcher
         public MainWindow()
         {
             InitializeComponent();
-            switchButton.Content = "Ожидание...";
+            switchButton.Content = "Expectations...";
             certsManager = new CertManager();
-            switcher = new SSwitcher(tr.misaneIP);
+            switcher = new SSwitcher(tr.minaseIP);
             switchButton.IsEnabled = false;
             init();
         }
@@ -91,7 +91,7 @@ namespace Switcher
                 }
             }catch (Exception ex)
             {
-                MessageBox.Show("Ошибка при переключении, У вас включен антивирус? пользователь имеет право на редактирование файлов windows? есть место на диске?\nПодробности:\n\n" + ex);
+                MessageBox.Show("There's an error occured while connecting to osu!aluri Is your antivirus enabled? Am I allowed to change anything? Is there still a space left on your hard drive?\nError Details:\n\n" + ex);
             }
 
             await CheckServer();
